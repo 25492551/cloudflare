@@ -1,358 +1,398 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  
-  <!-- SEO Meta Tags -->
-  <title>HUMMAN RESEARCH - RECODING YOUR VITALITY</title>
-  <meta name="description" content="We build research platforms around endogenous lipid signaling, designing systems that support motivation, routine, and sustained training behavior.">
-  <meta name="keywords" content="HUMMAN RESEARCH, endogenous lipid signaling, NAE, lipid research, exercise motivation, systems biology">
-  <meta name="author" content="HUMMAN RESEARCH">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://hummanresearch.com/">
-  <meta property="og:title" content="HUMMAN RESEARCH - RECODING YOUR VITALITY">
-  <meta property="og:description" content="We build research platforms around endogenous lipid signaling, designing systems that support motivation, routine, and sustained training behavior.">
-  <meta property="og:image" content="https://hummanresearch.com/images/og-image.jpg">
-  
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://hummanresearch.com/">
-  <meta property="twitter:title" content="HUMMAN RESEARCH - RECODING YOUR VITALITY">
-  <meta property="twitter:description" content="We build research platforms around endogenous lipid signaling, designing systems that support motivation, routine, and sustained training behavior.">
-  <meta property="twitter:image" content="https://hummanresearch.com/images/twitter-image.jpg">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
-  <link rel="icon" type="image/svg+xml" href="/images/logo.svg">
-  
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-  
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="/css/variables.css">
-  <link rel="stylesheet" href="/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Meta Tags -->
+    <title>HUMAN RESEARCH - RECODING YOUR VITALITY</title>
+    <meta name="description"
+        content="We build research platforms around endogenous lipid signaling, designing systems that support motivation, routine, and sustained training behavior.">
+    <meta name="keywords"
+        content="HUMAN RESEARCH, endogenous lipid signaling, NAE, lipid research, exercise motivation, systems biology">
+    <meta name="author" content="HUMAN RESEARCH">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://HUMANresearch.com/">
+    <meta property="og:title" content="HUMAN RESEARCH - RECODING YOUR VITALITY">
+    <meta property="og:description"
+        content="We build research platforms around endogenous lipid signaling, designing systems that support motivation, routine, and sustained training behavior.">
+    <meta property="og:image" content="https://HUMANresearch.com/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://HUMANresearch.com/">
+    <meta property="twitter:title" content="HUMAN RESEARCH - RECODING YOUR VITALITY">
+    <meta property="twitter:description"
+        content="We build research platforms around endogenous lipid signaling, designing systems that support motivation, routine, and sustained training behavior.">
+    <meta property="twitter:image" content="https://HUMANresearch.com/images/twitter-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="/images/logo.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/renewal.css">
 </head>
+
 <body>
-  <!-- Skip to main content for accessibility -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-  
-  <!-- Header / Navigation (activetheory.net style) -->
-  <header class="header" role="banner">
-    <nav class="nav" role="navigation" aria-label="Main navigation">
-      <!-- Hamburger Menu Button (Left Top) -->
-      <button class="nav-hamburger" 
-              type="button" 
-              aria-label="Toggle navigation menu"
-              aria-expanded="false"
-              aria-controls="nav-menu">
-        <span class="nav-hamburger-line"></span>
-        <span class="nav-hamburger-line"></span>
-        <span class="nav-hamburger-line"></span>
-      </button>
-      
-      <!-- Logo -->
-      <div class="nav-logo">
-        <a href="/" aria-label="HUMMAN RESEARCH Home">
-          <img src="/images/logo.svg" alt="HUMMAN RESEARCH Logo" class="logo-img" decoding="async" loading="eager">
-          <span class="logo-text">HUMMAN RESEARCH</span>
-        </a>
-      </div>
-      
-      <!-- Sliding Overlay Menu -->
-      <div class="nav-overlay" id="nav-menu" aria-hidden="true">
-        <div class="nav-overlay-content">
-          <nav class="nav-overlay-nav" aria-label="Overlay navigation">
-            <ul class="nav-menu-list">
-              <li class="nav-menu-item">
-                <a href="#start" class="nav-menu-link">Start</a>
-              </li>
-              <li class="nav-menu-item">
-                <a href="#hero" class="nav-menu-link">Hero</a>
-              </li>
-              <li class="nav-menu-item">
-                <a href="#core-concept" class="nav-menu-link">Core Concept</a>
-              </li>
-              <li class="nav-menu-item">
-                <a href="#contents-1" class="nav-menu-link">Contents 1</a>
-              </li>
-              <li class="nav-menu-item">
-                <a href="#contents-2" class="nav-menu-link">Contents 2</a>
-              </li>
-              <li class="nav-menu-item">
-                <a href="#values" class="nav-menu-link">Values</a>
-              </li>
-              <li class="nav-menu-item">
-                <a href="#end" class="nav-menu-link">End</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </nav>
-  </header>
-  
-  <!-- Main Content -->
-  <main id="main-content" role="main">
-    
-    <!-- Start: LOGO -->
-    <section class="start-section" id="start" aria-label="Start logo section">
-      <div class="start-content">
-        <div class="start-logo">
-          <img src="/images/logo.svg" alt="HUMMAN RESEARCH Logo" class="start-logo-img" decoding="async" loading="eager">
-        </div>
-      </div>
-    </section>
-    
-    <!-- Hero -->
-    <section class="hero" id="hero" aria-label="Hero section">
-      <div class="hero-background">
-        <div class="hero-gradient"></div>
-        <div class="hero-lighting" data-parallax="0.12"></div>
-        <!-- Figma background graphics -->
-        <img src="/images/figma/Ellipse%201.svg" alt="" class="hero-bg-ellipse" aria-hidden="true" decoding="async" loading="lazy">
-        <img src="/images/figma/Polygon%201.svg" alt="" class="hero-bg-polygon" aria-hidden="true" decoding="async" loading="lazy">
-      </div>
-      <div class="hero-content">
-        <h1 class="hero-main-headline">RECODING YOUR VITALITY</h1>
-        <p class="hero-subheadline">We build research platforms around endogenous lipid signaling, designing systems that support motivation, routine, and sustained training behavior.</p>
-        <h2 class="hero-section-title">THE FUTURE OF ENDOGENOUS LIPID SIGNALING</h2>
-        <p class="hero-description">Beyond selling supplements, we study how lipid-mediated signaling systems interact with physical activity. Our work focuses on designing environments where exercise itself becomes the trigger for motivation.</p>
-        <div class="hero-tech-tags">
-          <span class="tech-tag">#SystemsBiology</span>
-          <span class="tech-tag">#LipidResearch</span>
-          <span class="tech-tag">#EndogenousMotivation</span>
-          <span class="tech-tag">#ResearchDrivenPlatform</span>
-        </div>
-      </div>
-      <div class="hero-scroll-indicator" aria-hidden="true">
-        <span class="scroll-arrow"></span>
-      </div>
-    </section>
-    
-    <!-- Core Concept -->
-    <section class="core-concept" id="core-concept" aria-label="Core concept section">
-      <div class="container">
-        <div class="core-concept-content">
-          <h2 class="core-concept-title">CORE CONCEPT <span class="core-concept-subtitle">(What makes this company different)</span></h2>
-          <h3 class="core-concept-headline">Exercise Is the Switch</h3>
-          <p class="core-concept-text">We focus on lipid mediators that interact with exercise-induced signaling, including pathways associated with blood–brain barrier accessibility.</p>
-          <p class="core-concept-text">Rather than mimicking stimulation, our research explores how physical activity itself activates endogenous systems related to motivation, engagement, and reward.</p>
-          <blockquote class="core-concept-quote">
-            <p>Motivation is not added.</p>
-            <p>It is unlocked by movement.</p>
-          </blockquote>
-        </div>
-      </div>
-    </section>
-    
-    <!-- Contents 1: CARD 01~04 -->
-    <section class="contents-1" id="contents-1" aria-label="Contents 1 section">
-      <div class="container">
-        <div class="contents-1-wrapper">
-          <!-- DNA Double Helix (Central Element) -->
-          <div class="dna-helix-container">
-            <img src="/images/figma/11%201.svg" alt="DNA Double Helix" class="dna-helix" aria-hidden="true" decoding="async" loading="eager">
-          </div>
-          <div class="cards-grid">
-          <!-- CARD 01: NAE Platform (SCIENCE) -->
-          <article class="card" data-tag="SCIENCE" data-tilt data-metallic>
-            <div class="card-tag">SCIENCE</div>
-            <h3 class="card-title">NAE Platform</h3>
-            <p class="card-one-liner">N-acylethanolamide biology, translated into structured performance systems.</p>
-            <div class="card-hover-copy">
-              <p>The NAE family is involved in lipid-mediated signaling related to appetite, inflammation, and neural activity. Our platform studies how these pathways contribute to routine, consistency, and exercise-driven motivation—not short-term stimulation.</p>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header / Navigation (activetheory.net style) -->
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+            <!-- Hamburger Menu Button (Left Top) -->
+            <button class="nav-hamburger" type="button" aria-label="Toggle navigation menu" aria-expanded="false"
+                aria-controls="nav-menu">
+                <span class="nav-hamburger-line"></span>
+                <span class="nav-hamburger-line"></span>
+                <span class="nav-hamburger-line"></span>
+            </button>
+
+            <!-- Logo -->
+            <div class="nav-logo">
+                <a href="/" aria-label="HUMAN RESEARCH Home">
+                    <img src="/images/logo.svg" alt="HUMAN RESEARCH Logo" class="logo-img" decoding="async"
+                        loading="eager">
+                    <span class="logo-text">HUMAN RESEARCH</span>
+                </a>
             </div>
-            <a href="#science-detail" class="card-cta btn btn-primary" aria-disabled="true" data-cta>View Science</a>
-          </article>
-          
-          <!-- CARD 02: Peripheral NAE Platform (PLATFORM) -->
-          <article class="card" data-tag="PLATFORM" data-tilt data-metallic>
-            <div class="card-tag">PLATFORM</div>
-            <h3 class="card-title">Peripheral NAE Platform (OEA / PEA / SEA)</h3>
-            <p class="card-one-liner">Peripheral-first lipid signaling for daily training consistency.</p>
-            <div class="card-hover-copy">
-              <p>This platform focuses on NAEs primarily associated with peripheral signaling, supporting appetite rhythm, physical comfort, and baseline readiness. Designed for stability, repeatability, and long-term routine support.</p>
+
+            <!-- Sliding Overlay Menu -->
+            <div class="nav-overlay" id="nav-menu" aria-hidden="true">
+                <div class="nav-overlay-content">
+                    <nav class="nav-overlay-nav" aria-label="Overlay navigation">
+                        <ul class="nav-menu-list">
+                            <li class="nav-menu-item">
+                                <a href="#start" class="nav-menu-link">Start</a>
+                            </li>
+                            <li class="nav-menu-item">
+                                <a href="#hero" class="nav-menu-link">Hero</a>
+                            </li>
+                            <li class="nav-menu-item">
+                                <a href="#core-concept" class="nav-menu-link">Core Concept</a>
+                            </li>
+                            <li class="nav-menu-item">
+                                <a href="#contents-1" class="nav-menu-link">Contents 1</a>
+                            </li>
+                            <li class="nav-menu-item">
+                                <a href="#contents-2" class="nav-menu-link">Contents 2</a>
+                            </li>
+                            <li class="nav-menu-item">
+                                <a href="#values" class="nav-menu-link">Values</a>
+                            </li>
+                            <li class="nav-menu-item">
+                                <a href="#end" class="nav-menu-link">End</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <a href="#peripheral-detail" class="card-cta btn btn-primary" aria-disabled="true" data-cta>Explore Peripheral Platform</a>
-          </article>
-          
-          <!-- CARD 03: Central NAE Research (R&D) -->
-          <article class="card" data-tag="R&amp;D" data-tilt data-metallic>
-            <div class="card-tag">R&amp;D</div>
-            <h3 class="card-title">Central NAE Research (DHEA / AEA)</h3>
-            <p class="card-one-liner">Exercise-activated lipid signaling beyond the periphery.</p>
-            <div class="card-hover-copy">
-              <p>We explore NAEs associated with central nervous system engagement, focusing on motivation, reward, and exercise-associated affect. This work remains research-driven and exploratory.</p>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <section class="sec_ sec_1">
+            <div class="title_img_box">
+                <img src="/images/renewal/img_1.png" alt="" decoding="async" loading="lazy">
             </div>
-            <a href="#central-detail" class="card-cta btn btn-primary" aria-disabled="true" data-cta>Our R&amp;D Principles</a>
-          </article>
-          
-          <!-- CARD 04: Training Motivation System (EXPERIENCE) -->
-          <article class="card" data-tag="EXPERIENCE" data-tilt data-metallic>
-            <div class="card-tag">EXPERIENCE</div>
-            <h3 class="card-title">Training Motivation System</h3>
-            <p class="card-one-liner">Supplementation is only one layer.</p>
-            <div class="card-hover-copy">
-              <p>We study how ritual, routine, and feedback loops interact with lipid signaling and physical activity, designing systems that support long-term training adherence.</p>
+            <div class="line_img_box">
+                <img src="/images/renewal/line_img.png" alt="" decoding="async" loading="lazy">
             </div>
-            <a href="#experience-detail" class="card-cta btn btn-primary" aria-disabled="true" data-cta>See How It Works</a>
-          </article>
-        </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- Contents 2: Detail Section -->
-    <section class="contents-2" id="contents-2" aria-label="Contents 2 section">
-      <div class="container">
-        <!-- Science Page Detail -->
-        <article class="detail-section" id="science-detail" aria-label="Science page detail">
-          <h2 class="detail-title">SCIENCE PAGE <span class="detail-subtitle">(Detail page - Fixed concept)</span></h2>
-          <div class="detail-content">
-            <h3 class="detail-heading">What are NAEs?</h3>
-            <p>N-acylethanolamides (NAEs) are endogenous lipid signaling molecules naturally produced in the human body. They participate in peripheral and central pathways related to energy balance, inflammatory signaling, and neural engagement.</p>
-            <h3 class="detail-heading">Why exercise matters</h3>
-            <p>Many NAE-related pathways become most relevant during and after physical activity. We study NAEs in the context of movement-triggered signaling, not passive consumption.</p>
-            <p>Ongoing findings are published separately in Research Updates.</p>
-            <p class="detail-note">Research results, progress, experimental data → separate "Research Updates" section</p>
-          </div>
-        </article>
-        
-        <!-- Peripheral NAE Platform Detail -->
-        <article class="detail-section" id="peripheral-detail" aria-label="Peripheral NAE Platform detail">
-          <h2 class="detail-title">Peripheral NAE Platform <span class="detail-subtitle">(Detail page - Fixed concept + content updates)</span></h2>
-          <div class="detail-content">
-            <p class="detail-scope"><strong>Scope:</strong> Daily baseline · Routine stability · Peripheral signaling</p>
-            <h3 class="detail-heading">Overview</h3>
-            <p>This platform integrates OEA, PEA, and SEA as a system, not isolated ingredients. Each component contributes to a different peripheral context, together supporting the conditions required for consistent training behavior.</p>
-            <h3 class="detail-heading">Included Research Concepts</h3>
-            <ul class="detail-list">
-              <li><strong>OEA</strong> — metabolic and satiety-related signaling associated with energy balance</li>
-              <li><strong>PEA</strong> — inflammation-associated signaling pathways linked to physical comfort</li>
-              <li><strong>SEA</strong> — a saturated, oxidation-stable NAE associated with baseline lipid signaling</li>
-            </ul>
-            <blockquote class="detail-quote">
-              <p>This is not a stimulant stack.</p>
-              <p>It is a peripheral signaling environment.</p>
-            </blockquote>
-          </div>
-        </article>
-        
-        <!-- Central NAE Research Detail -->
-        <article class="detail-section" id="central-detail" aria-label="Central NAE Research detail">
-          <h2 class="detail-title">Central NAE Research <span class="detail-subtitle">(Detail page - Research update focused)</span></h2>
-          <div class="detail-content">
-            <p class="detail-scope"><strong>Scope:</strong> Motivation · Reward · Cognitive engagement</p>
-            <h3 class="detail-heading">Overview</h3>
-            <p>This research track focuses on DHEA (Synaptamide) and AEA (Anandamide)—lipid mediators associated with blood–brain barrier accessibility and exercise-related neural signaling.</p>
-            <p>Rather than targeting these pathways directly, we study how physical activity itself acts as the primary trigger for endogenous motivation-related signaling.</p>
-            <h3 class="detail-heading">Active Research Areas</h3>
-            <div class="research-areas">
-              <div class="research-area">
-                <h4 class="research-area-title">DHEA (Synaptamide)</h4>
-                <ul class="research-area-list">
-                  <li>Neural signaling related to learning and synaptic plasticity</li>
-                  <li>Cognitive engagement during sustained physical activity</li>
-                </ul>
-              </div>
-              <div class="research-area">
-                <h4 class="research-area-title">AEA (Anandamide)</h4>
-                <ul class="research-area-list">
-                  <li>Endocannabinoid-associated pathways (CB1 / CB2)</li>
-                  <li>Exercise-induced motivational and affective states</li>
-                  <li>Neurochemical responses to endurance activity</li>
-                </ul>
-              </div>
+
+            <div class="text_box">
+                <h6>
+                    RECODING YOUR VITALITY
+                </h6>
+                <p>
+                    We build research platforms around endogenous lipid signaling,
+                    <br />designing systems that support motivation, routine,
+                    <br />and sustained training behavior.
+                </p>
             </div>
-            <p class="detail-note">Central NAE research is conducted with strict boundaries, emphasizing safety, evidence, and biological context.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-    
-    <!-- Values -->
-    <section class="values" id="values" aria-label="Values section">
-      <div class="values-background" aria-hidden="true"></div>
-      <div class="container">
-        <div class="values-grid">
-          <article class="value-item">
-            <h3 class="value-title">Purity & Identity</h3>
-            <p class="value-description">Identity-verified, impurity-aware, traceable by design.</p>
-          </article>
-          <article class="value-item">
-            <h3 class="value-title">Stability by Design</h3>
-            <p class="value-description">Lipid systems demand oxidation-aware formulation and packaging.</p>
-          </article>
-          <article class="value-item">
-            <h3 class="value-title">Automation Mindset</h3>
-            <p class="value-description">Repeatable processes over spectacle.</p>
-          </article>
+            <div class="bottom_text_box">
+                <h6>
+                    THE FUTURE OF ENDOGENOUS LIPID SIGNALING
+                </h6>
+                <p>
+                    Beyond selling supplements, we study how lipid-mediated<br />signaling systems interact with
+                    physical activity. Our work<br />focuses on designing environments where exercise
+                    itself<br />becomes the trigger for motivation.
+                </p>
+            </div>
+            <img class="sec_bg" src="/images/renewal/bg_1.png" alt="" decoding="async" loading="lazy" />
+        </section>
+
+        <section class="sec_ sec_2">
+            <div class="content_box">
+                <div class="ani_img_box">
+                    <img src="/images/renewal/gif_1.gif" alt="" decoding="async" loading="lazy">
+                </div>
+                <div class="box_ box_1">
+                    <p class="sub_title">
+                        PLATFORM
+                    </p>
+                    <h6>
+                        Peripheral NAE<br />Platform<br />
+                        (OEA / PEA / SEA)
+                    </h6>
+                    <p class="text_">
+                        Peripheral-first lipid signaling for daily training consistency.
+                    </p>
+                </div>
+
+                <div class="box_ box_2">
+                    <p class="sub_title">
+                        SCIENCE
+                    </p>
+                    <h6>
+                        NAE Platform
+                    </h6>
+                    <p class="text_">
+                        N-acylethanolamide biology,
+                        translated into structured
+                        performance systems.
+                    </p>
+                </div>
+
+                <div class="box_ box_3">
+                    <p class="sub_title">
+                        SCIENCE
+                    </p>
+                    <h6>
+                        NAE Platform
+                    </h6>
+                    <p class="text_">
+                        N-acylethanolamide biology,
+                        translated into structured
+                        performance systems.
+                    </p>
+                </div>
+
+                <div class="box_ box_4">
+                    <p class="sub_title">
+                        SCIENCE
+                    </p>
+                    <h6>
+                        NAE Platform
+                    </h6>
+                    <p class="text_">
+                        N-acylethanolamide biology,
+                        translated into structured
+                        performance systems.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec_ sec_3">
+            <img class="bg_" src="/images/renewal/bg_2_1.png" alt="" />
+            <div class="content_">
+                <div class="text_flex">
+                    <div>
+                        <h6>
+                            What are NAEs?
+                        </h6>
+                        <p>
+                            N-acylethanolamides (NAEs) are endogenous lipid signaling molecules naturally produced in
+                            the human body. They participate in peripheral and central pathways related to energy
+                            balance, inflammatory signaling, and neural engagement.
+                        </p>
+                    </div>
+                    <div>
+                        <h6>
+                            Why exercise matters
+                        </h6>
+                        <p>
+                            N-acylethanolamides (NAEs) are endogenous lipid signaling molecules naturally produced in
+                            the human body. They participate in peripheral and central pathways related to energy
+                            balance, inflammatory signaling, and neural engagement.
+                        </p>
+                    </div>
+                </div>
+                <div class="content_wrap content_wrap_1">
+                    <div class="title_">
+                        <h6>
+                            Peripheral NAE Platform
+                        </h6>
+                        <p class="text_">
+                            This platform integrates OEA, PEA, and SEA as a system, not<br /> isolated ingredients. Each
+                            component contributes to a different<br /> peripheral context, together supporting the
+                            conditions required<br /> for consistent training behavior.
+                        </p>
+                    </div>
+                    <div class="flex_">
+                        <div class="box_">
+                            <h6>OEA</h6>
+                            <p>
+                                metabolic and satiety-related signaling associated with energy balance
+                            </p>
+                        </div>
+                        <div class="box_">
+                            <h6>PEA</h6>
+                            <p>
+                                inflammation-associated signaling pathways linked to physical comfort </p>
+                        </div>
+                        <div class="box_">
+                            <h6>SEA</h6>
+                            <p>
+                                a saturated, oxidation-stable NAE associated with baseline lipid signaling </p>
+                        </div>
+                    </div>
+                    <p class="sub_text">
+                        This is not a stimulant stack.<br />It is a peripheral signaling environment.
+                    </p>
+                </div>
+
+                <div class="content_wrap content_wrap_2">
+                    <div class="title_">
+                        <p class="sub_title">
+                            Scope: Motivation · Reward · Cognitive engagement
+                        </p>
+                        <h6>
+                            Central NAE Research
+                        </h6>
+                        <p class="text_">
+                            This research track focuses on DHEA (Synaptamide) and AEA<br /> (Anandamide)—lipid mediators
+                            associated with blood–brain<br /> barrier accessibility and exercise-related neural
+                            signaling.<br />
+                            Rather than targeting these pathways directly, we study how<br /> physical activity itself
+                            acts as
+                            the primary trigger for<br /> endogenous motivation-related signaling.
+                        </p>
+                    </div>
+                    <p class="list_">
+                        Active Research Areas
+                        <span>DHEA (Synaptamide)
+                            <span>Neural signaling related to learning and synaptic plasticity</span>
+                            <span>Cognitive engagement in the context of sustained physical activity</span>
+                        </span>
+                        <span>AEA (Anandamide)
+                            <span>Endocannabinoid-associated pathways (CB1 / CB2) </span>
+                            <span>Exercise-induced motivational and affective states</span>
+                            <span>Neurochemical responses to endurance activity </span>
+                        </span>
+                        Central NAE research is conducted with
+                        strict boundaries, emphasizing safety, evidence, and biological context.
+                    </p>
+                </div>
+
+                <div class="values_">
+                    <h6>Values</h6>
+                    <div class="flex_">
+                        <div>
+                            <div class="box_">
+                                Purity & Identity
+                            </div>
+                            <p>
+                                Identity-verified, impurity-aware,<br />
+                                traceable by design.
+                            </p>
+                        </div>
+                        <div>
+                            <div class="box_">
+                                Stability by Design
+                            </div>
+                            <p>
+                                Lipid systems demand oxidation-aware formulation and packaging.
+                            </p>
+                        </div>
+                        <div>
+                            <div class="box_">
+                                Automation Mindset
+                            </div>
+                            <p>
+                                Repeatable processes over spectacle.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class="bg_2" src="/images/renewal/bg_2_2.png" alt="" />
+        </section>
+        <section class="sec_ sec_4">
+            <p>
+                This is not about adding motivation.<br />
+                It is about designing systems where movement activates it.
+            </p>
+            <img class="bg_" src="/images/renewal/bg_3.png" alt="" />
+        </section>
+
+        <!-- End: Fixed bottom message (no logo) -->
+        <section class="end-section" id="end" aria-label="End message section">
+            <div class="container">
+                <blockquote class="end-message">
+                    <p>This is not about adding motivation.</p>
+                    <p>It is about designing systems where movement activates it.</p>
+                </blockquote>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Business Card design priority) -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="/images/logo.svg" alt="HUMAN RESEARCH Logo" class="footer-logo-img" decoding="async"
+                            loading="lazy">
+                    </div>
+                    <p class="footer-company-name">HUMAN RESEARCH</p>
+                </div>
+                <div class="footer-info">
+                    <p class="footer-copyright">
+                        &copy; <span id="current-year"></span> HUMAN RESEARCH. All rights reserved.
+                    </p>
+                    <nav class="footer-nav" aria-label="Footer navigation">
+                        <ul class="footer-nav-list">
+                            <li class="footer-nav-item">
+                                <a href="#start" class="footer-nav-link">Start</a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="#hero" class="footer-nav-link">Hero</a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="#core-concept" class="footer-nav-link">Core Concept</a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="#contents-1" class="footer-nav-link">Contents 1</a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="#contents-2" class="footer-nav-link">Contents 2</a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="#values" class="footer-nav-link">Values</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer-siteseal" aria-label="SSL Site Seal">
+                        <span id="siteseal">
+                            <script async type="text/javascript"
+                                src="https://seal.godaddy.com/getSealBasic?sealID=bsXgOGp69k5mcC82FsyFg6PiGStvfaAWtrY4Up3GzidcU1n2ZLvW7yLrLpcK"></script>
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
-    
-    <!-- End: Fixed bottom message (no logo) -->
-    <section class="end-section" id="end" aria-label="End message section">
-      <div class="container">
-        <blockquote class="end-message">
-          <p>This is not about adding motivation.</p>
-          <p>It is about designing systems where movement activates it.</p>
-        </blockquote>
-      </div>
-    </section>
-  </main>
-  
-  <!-- Footer (Business Card design priority) -->
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <div class="footer-logo">
-            <img src="/images/logo.svg" alt="HUMMAN RESEARCH Logo" class="footer-logo-img" decoding="async" loading="lazy">
-          </div>
-          <p class="footer-company-name">HUMMAN RESEARCH</p>
-        </div>
-        <div class="footer-info">
-          <p class="footer-copyright">
-            &copy; <span id="current-year"></span> HUMMAN RESEARCH. All rights reserved.
-          </p>
-          <nav class="footer-nav" aria-label="Footer navigation">
-            <ul class="footer-nav-list">
-              <li class="footer-nav-item">
-                <a href="#start" class="footer-nav-link">Start</a>
-              </li>
-              <li class="footer-nav-item">
-                <a href="#hero" class="footer-nav-link">Hero</a>
-              </li>
-              <li class="footer-nav-item">
-                <a href="#core-concept" class="footer-nav-link">Core Concept</a>
-              </li>
-              <li class="footer-nav-item">
-                <a href="#contents-1" class="footer-nav-link">Contents 1</a>
-              </li>
-              <li class="footer-nav-item">
-                <a href="#contents-2" class="footer-nav-link">Contents 2</a>
-              </li>
-              <li class="footer-nav-item">
-                <a href="#values" class="footer-nav-link">Values</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="footer-siteseal" aria-label="SSL Site Seal">
-            <span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSealBasic?sealID=bsXgOGp69k5mcC82FsyFg6PiGStvfaAWtrY4Up3GzidcU1n2ZLvW7yLrLpcK"></script></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  
-  <!-- JavaScript -->
-  <script src="/js/main.js"></script>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/js/main.js"></script>
 </body>
+
 </html>
