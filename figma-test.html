@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Figma Images Test</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    h1 {
+      color: #333;
+      border-bottom: 2px solid #1e3a8a;
+      padding-bottom: 10px;
+    }
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .image-item {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 10px;
+      background: #fafafa;
+    }
+    .image-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .image-item .filename {
+      font-size: 12px;
+      color: #666;
+      word-break: break-all;
+    }
+    .status {
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 4px;
+    }
+    .status.success {
+      background: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+    .status.error {
+      background: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Figma Images Test Page</h1>
+    <div class="status success">
+      ✅ 로컬 서버가 실행 중입니다. 이 페이지는 figma 폴더의 이미지들을 테스트합니다.
+    </div>
+    
+    <h2>테스트 이미지들</h2>
+    <div class="image-grid" id="imageGrid">
+      <!-- 이미지들이 여기에 동적으로 로드됩니다 -->
+    </div>
+  </div>
+
+  <script>
+    // 주요 figma 이미지 파일 목록
+    const figmaImages = [
+      'HUMMAN RESEARCH.png',
+      'HUMMAN RESEARCH.svg',
+      'RECODING YOUR VITALITY.png',
+      'RECODING YOUR VITALITY.svg',
+      'THE FUTURE OF ENDOGENOUS LIPID SIGNALING.png',
+      'NAE Platform.png',
+      'NAE Platform.svg',
+      'SCIENCE.png',
+      'PLATFORM.png',
+      'R&D.png',
+      'EXPERIENCE.png',
+      'Rectangle 1.png',
+      'Mask group.png',
+      'Vector 2.png',
+      'Ellipse 1.png',
+    ];
+
+    const imageGrid = document.getElementById('imageGrid');
+    const basePath = '/images/figma/';
+
+    figmaImages.forEach(filename => {
+      const imageItem = document.createElement('div');
+      imageItem.className = 'image-item';
+      
+      const img = document.createElement('img');
+      // URL 인코딩하여 공백 처리
+      img.src = basePath + encodeURIComponent(filename);
+      img.alt = filename;
+      img.onerror = function() {
+        this.style.border = '2px solid red';
+        this.alt = '❌ 로드 실패: ' + filename;
+      };
+      img.onload = function() {
+        this.style.border = '2px solid green';
+      };
+      
+      const filenameDiv = document.createElement('div');
+      filenameDiv.className = 'filename';
+      filenameDiv.textContent = filename;
+      
+      imageItem.appendChild(img);
+      imageItem.appendChild(filenameDiv);
+      imageGrid.appendChild(imageItem);
+    });
+
+    // 페이지 로드 후 상태 확인
+    window.addEventListener('load', () => {
+      console.log('Figma images test page loaded');
+      console.log('Base path:', basePath);
+      console.log('Testing images:', figmaImages.length);
+    });
+  </script>
+</body>
+</html>
