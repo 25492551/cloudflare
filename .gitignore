@@ -1,0 +1,12 @@
+# Virtual environment
+.venv/
+
+# Folders from .cursorrules directory structure
+01_data/
+02_log/
+03_script/
+04_layout/
+05_plan/
+06_docs/
+
+git/

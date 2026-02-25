@@ -1,0 +1,147 @@
+# Project Rules: CLOUDFLARE
+
+## Final Goal
+- Built web pages
+
+## Directory Structure (Priority Order)
+The project follows a structured directory organization with the following priority:
+
+1. **@01_data**: Math results
+   - Contains mathematical results: manuscripts, analysis reports, final reports, and related data
+   - Files in this directory should not be modified by automated processes
+   - Riemann Zeta function zero data and related mathematical outputs belong here
+
+2. **@02_log**: Job logging (Mandatory)
+   - All jobs and tasks must be documented as markdown files in this directory
+   - Contains job logs(`02_log/02_job/`) and chat(`02_log/01_chat/`) logs
+   - Job logs are historical records of completed work
+   - **Mandatory**: All jobs must be logged in the `02_log/02_job/` directory
+   - **Active**: Cursor must actively reference and update job logs
+   - Before starting a job, check existing logs. After completing a job, you must write a log entry
+   - Job logging is mandatory, not optional
+
+3. **@03_script**: Program code
+   - Contains executable scripts and automation tools
+   - All program code and executable files should be placed here
+   - All Python scripts for visualization, simulation, and calculations are located here
+   - Scripts should be used for:
+     - Riemann Zeta function calculations and approximations
+     - Visualization of zeros, energy landscapes, and vector fields
+     - Particle simulations and Coulomb gas models
+     - Zero prediction models
+     - Sound synthesis from zero frequencies
+   - Scripts should be well-documented with comments explaining their purpose and mathematical formulas
+   - Scripts should generate visualizations (plots, graphs) and save them appropriately
+
+4. **@04_layout**: Blueprint documents of this project
+   - Contains design documents, architecture blueprints, and structural plans
+   - Layout represents confirmed plans (finalized blueprints)
+
+5. **@05_plan**: Plan for building or updating script or layout
+   - Contains planning documents for building or updating scripts or layouts
+   - Plans are under consideration (not yet finalized)
+   - Plans, checklists, and future steps should be documented in `plan_*.md` files in this directory
+
+6. **@06_docs**: Other docs
+   - Run logs (e.g. GPU scalability logs), install notes, usage guides, and reference materials
+   - **Mandatory**: Math results (reports, manuscripts) go in `01_data/`; other documentation (logs, how-to, reference) goes in `06_docs/`
+   - Report naming: Use descriptive names like `[topic]_analysis.md` or `[topic]_report.md`
+   - Generated visualizations and sound files should be saved in an appropriate location and referenced in reports
+
+## Language Requirements (Mandatory)
+- **All English**: All content in this project must be written in English
+  - All code, comments, documentation, and project files must be in English
+  - All structured data and their names must be in English
+  - All documentation files (markdown files in `02_log/`, `04_layout/`, `05_plan/`, `06_docs/`) must be written in English
+  - All project documentation (plans, layouts, job logs, general docs) must be written in English
+  - Code-related documentation (inline comments, code documentation) must be in English
+  - Database schema, table names, column names, and all identifiers must be in English
+  - **All content in `.cursorrules` must be written in English** - This file serves as a reference for Cursor AI and should be in English for better compatibility
+
+## Job Logging (**Mandatory**)
+- All jobs and tasks must be documented as markdown files in the `02_log/02_job/` directory
+- Each job should be tracked with appropriate markdown documentation
+- Job logs should include relevant details such as task description, implementation steps, and outcomes
+- Job logs are historical records of completed work - they should NOT contain plans, checklists, or future steps
+- Plans, checklists, and future steps should be documented in `plan_*.md` files in the `05_plan/` directory
+- **Mandatory**: After creating a new job log file, you **must** update `02_log/02_job/logmap_job.md`
+- The logmap file contains summaries of all job log files in chronological order
+- When adding a new entry to logmap_job.md:
+  1. Add a new section with the job log filename as header (e.g., `### job_YYYY-MM-DD_HHMMSS.md`)
+  2. Include: Job Date/Time, Job Overview (brief summary), Changed Files, and key details
+  3. Update the "업데이트 기록" (Update Record) section at the bottom with the date
+- Format: Follow the existing format in logmap_job.md for consistency
+- This ensures all job logs are easily discoverable and summarized in one place
+
+## Chat Log Usage
+- The `02_log/01_chat/` directory is used by the user
+- Users may make requests for referencing chat logs
+- Chat logs serve as a communication history and reference point
+- Cursor passively references chat logs
+- Chat logs are only referenced when explicitly instructed by the user
+
+## Installation and Dependencies
+- You can ask the user about installation requirements
+- Detour methods (workarounds) should be considered as a second option
+- When installation is needed, prefer asking the user first before implementing alternative solutions
+
+## Virtual Environment (venv)
+- The project uses a Python virtual environment located in the `venv/` directory
+- Always activate the virtual environment before running Python scripts or installing packages
+- To activate: `source venv/bin/activate` (Linux/Mac) or `venv\Scripts\activate` (Windows)
+- Install all Python dependencies within the virtual environment
+- Include `venv/` in `.gitignore` if version control is used
+- When creating or modifying Python scripts, ensure they are compatible with the virtual environment
+- Package installation command examples:
+  ```bash
+  source venv/bin/activate
+  pip install [package_name]
+  ```
+- Or install by directly specifying the virtual environment:
+  ```bash
+  venv/bin/pip install [package_name]
+  ```
+
+## Script Directory
+- The `03_script/` directory contains executable scripts and automation tools
+- Scripts should be well-documented with clear purpose and usage instructions
+- Follow consistent naming conventions for script files
+- Scripts should be executable and include proper shebang lines when applicable
+- All scripts must follow the project's language requirements (English for code and comments)
+- Scripts related to database operations should follow PostgreSQL best practices
+
+## Documentation
+- Math results (reports, manuscripts) in `01_data/`; other docs (run logs, usage guides, reference) in `06_docs/`
+- Documentation files should be in markdown format (.md) unless otherwise specified
+
+## General Guidelines
+- Follow PostgreSQL best practices for database design
+- Maintain consistency in naming conventions
+- Keep code and documentation organized and well-structured
+- Ensure all database schemas and structures are properly documented
+
+## Indexing
+- All files in same folder should have integer index prefixed name.
+
+## Date and Datetime Format (**Mandatory**)
+- **ALL dates MUST include time information (HHMMSS)** - time information is mandatory and cannot be omitted
+- All dates must be written in datetime format: YYYY-MM-DDTHHMMSS
+- The time component (HHMMSS) is **REQUIRED** and must always be present
+- **DO NOT** use dates without time information (e.g., YYYY-MM-DD is invalid)
+- **DO NOT** use placeholder times like 000000 unless it is actually midnight (00:00:00)
+- When creating or updating documents, always use the actual time when the work was performed
+- Example: 2025-12-30T010101 (December 30, 2025 at 01:01:01)
+- Example: 2024-12-22T113854 (December 22, 2024 at 11:38:54)
+- Example: 2024-12-22T000000 (December 22, 2024 at 00:00:00) - only valid if work was actually done at midnight
+- Use 24-hour format for time (HHMMSS)
+- Leading zeros must be included for single-digit values
+- When in doubt, use the current time or the actual time when the work was completed
+
+## Workflow
+1. Use files from the `@01_data` folder for data analysis tasks (optional)
+2. Check existing logs in `02_log/02_job/` before starting a job
+3. **Must** record job content in `02_log/02_job/` after completing a job (mandatory)
+4. Chat logs are only checked when requested by the user
+5. Use scripts from the `03_script/` folder for calculations, visualizations, and simulations
+6. **Must** put math results (analysis reports, manuscripts) in `01_data/`; put other docs (logs, how-to) in `06_docs/` (mandatory)
+7. Save generated visualizations and output files appropriately and document them in reports
